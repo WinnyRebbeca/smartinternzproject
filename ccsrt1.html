@@ -1,0 +1,80 @@
+<html>
+<head>
+    <style>
+        form{
+                
+                font-style:italic;
+                font-size: 25px;
+                text-shadow: white;
+                text-decoration-color: white;
+                text-decoration:white;
+                color:black;
+            }
+             nav ul li {
+            display: inline-block;
+            padding: 0px 20px 5px 40px;
+        }
+
+        nav ul li a {
+            font-size: 60%;
+            text-decoration: none;
+            color: #8c34eb;
+            transition: 0.5s;
+        }
+        nav {
+            background:rgb(10, 230, 200);
+        }
+        body {
+            background-image: url("https://sika.scene7.com/is/image/sika/glo-architectural-texture-concrete-wall-02:1-1?wid=1200&hei=1200&fit=crop%2C1");
+         height: 180%;
+         width: auto;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            object-fit:cover;
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="topnav-right">
+          <ul class="nav navbar-nav">
+            <li<b><a href="/"><b>Home</a></b></li>
+        </ul>
+        </div>
+        </div>
+      </nav>
+
+<form action="/predict" method="POST">
+
+<p align='center'>Enter Cement</p>
+<center><input type="number"  name="Cement"/></center>
+<p align='center'> Enter BlastFurnaceSlag</p>
+<center><input type="number"  name="BlastFurnaceSlag"/></center>
+<p align='center'> Enter FlyAsh</p>
+<center><input type="number"  name="FlyAsh"/></center>
+<p align='center'> Enter Water</p>
+<center><input type="number"  name="Water"/></center>
+<p align='center'> Enter Superplasticizer</p>
+<center><input type="number"  name="Superplasticizer"/></center>
+<p align='center'> Enter CoarseAggregate</p>
+<center><input type="number"  name="CoarseAggregate"/><center>
+<p align='center'> Enter FineAggregate</p>
+<center><input type="number"  name="FineAggregate"/><center>
+<p align='center'> Enter Age</p>
+<center><input type="number"  name="Age"/></center>
+<br>
+<center><input type="submit"  value="Predict"/><br><br></center>
+
+<h1>{{x}}</h1>
+</form>
+</body>
+
+</html>
